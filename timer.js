@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
 	function makeTimer() {
-		
-		$('#timer').each(function() {
 			
 			var endTime = new Date("September 01, 2011 00:00:00");			
 			var endTime = (Date.parse(endTime)) / 1000;
@@ -25,8 +23,6 @@ $(document).ready(function() {
 			$("#timer #hours").html("<span>Hours</span>" + hours);
 			$("#timer #minutes").html("<span>Minutes</span>" + minutes);
 			$("#timer #seconds").html("<span>Seconds</span>" + seconds);		
-			
-		});
 		
 	}
 	
