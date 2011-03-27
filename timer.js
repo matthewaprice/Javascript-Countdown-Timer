@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
 	function makeTimer() {
-					
+		
+		$('#timer').each(function() {
+			
 			var endTime = new Date("September 01, 2011 00:00:00");			
 			var endTime = (Date.parse(endTime)) / 1000;
 			
@@ -19,13 +21,25 @@ $(document).ready(function() {
 			if (minutes < "10") { minutes = "0" + minutes; }
 			if (seconds < "10") { seconds = "0" + seconds; }
 										
-			$("#days").html("<span>Days</span>" + days);
-			$("#hours").html("<span>Hours</span>" + hours);
-			$("#minutes").html("<span>Minutes</span>" + minutes);
-			$("#seconds").html("<span>Seconds</span>" + seconds);		
+			$("#timer #days").html("<span>Days</span>" + days);
+			$("#timer #hours").html("<span>Hours</span>" + hours);
+			$("#timer #minutes").html("<span>Minutes</span>" + minutes);
+			$("#timer #seconds").html("<span>Seconds</span>" + seconds);		
+			
+		});
 		
 	}
 	
 	setInterval(function() { makeTimer(); }, 1000);
 	
 });
+
+// HTML output with this method
+// <div id="timer">
+//     <ul>
+//           <li id="days">...</li>
+//           <li id="hours">...</li>
+//           <li id="minutes">...</li>
+//           <li id="seconds">...</li>
+//     </ul>
+// </div>
