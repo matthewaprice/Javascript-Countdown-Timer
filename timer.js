@@ -1,10 +1,9 @@
-$(document).ready(function(){
-	
-	function makeTimers() {
+	function makeTimer() {
 		
-		$('div.timer span').each(function() {
+		$('#timer').each(function() {
 			
-			var endTime = $(this).attr('id');			
+			var endTime = new Date("September 01, 2011 00:00:00");			
+			var endTime = (Date.parse(endTime)) / 1000;
 			
 			var now = new Date();
 			var now = (Date.parse(now) / 1000);
@@ -20,12 +19,13 @@ $(document).ready(function(){
 			if (minutes < "10") { minutes = "0" + minutes; }
 			if (seconds < "10") { seconds = "0" + seconds; }
 										
-			$(this).html(days + ":" + hours + ":" + minutes + ":" + seconds);		
+			$("#days").html("<span>Days</span>" + days);
+			$("#hours").html("<span>Hours</span>" + hours);
+			$("#minutes").html("<span>Minutes</span>" + minutes);
+			$("#seconds").html("<span>Seconds</span>" + seconds);		
 			
 		});
 		
 	}
 	
-	setInterval(function() { makeTimers(); }, 1000);
-
-});	
+	setInterval(function() { makeTimer(); }, 1000);
