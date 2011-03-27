@@ -1,0 +1,6 @@
+--------------------
+2011-03-27
+This is a simple javascript countdown timer for jquery.  You put this in your scripts.js file.  This is not a plugin.  Currently it works by pulling unix time off an id of a span in your html.  My original purpose was for pulling the initial timer from a db.  I would like to adapt this into a jquery plugin so that you could call it like this:
+
+$("#timer").countDown("September 01, 2011 00:00:00");
+--------------------
