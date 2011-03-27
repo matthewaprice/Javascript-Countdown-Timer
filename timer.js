@@ -5,7 +5,6 @@ $(document).ready(function(){
 		$('div.timer span').each(function() {
 			
 			var endTime = $(this).attr('id');			
-			var endTime = endTime.replace('_','');
 			
 			var now = new Date();
 			var now = (Date.parse(now) / 1000);
