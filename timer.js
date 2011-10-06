@@ -18,10 +18,10 @@ function CFProjectTimer( time_remaining ) {
 	if (minutes < "10") { minutes = "0" + minutes; }
 	if (seconds < "10") { seconds = "0" + seconds; }
 	
-	document.getElementById('project-remaining-days').innerHTML = '<span>Days</span>' + days;
-	document.getElementById('project-remaining-hours').innerHTML = '<span>Hours</span>' + hours;
-	document.getElementById('project-remaining-minutes').innerHTML = '<span>Minutes</span>' + minutes;
-	document.getElementById('project-remaining-seconds').innerHTML = '<span>Seconds</span>' + seconds;
+	document.getElementById('days').innerHTML = '<span>Days</span>' + days;
+	document.getElementById('hours').innerHTML = '<span>Hours</span>' + hours;
+	document.getElementById('minutes').innerHTML = '<span>Minutes</span>' + minutes;
+	document.getElementById('seconds').innerHTML = '<span>Seconds</span>' + seconds;
 	
 }
 
