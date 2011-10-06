@@ -1,4 +1,10 @@
 --------------------
+2011-10-06
+Made this non jquery dependant
+implementation like this
+
+<script type="text/javascript">setInterval(function(){CFProjectTimer('January 04, 2012 12:55:43')},1000);</script>
+
 2011-03-27
 Changed the way the output is generated.  In the example below i have an unordered list with ids on the <li>s.
 
