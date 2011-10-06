@@ -1,4 +1,4 @@
-function CFProjectTimer( time_remaining ) {
+function countdownTimer( time_remaining ) {
 	
 	// End time is in this format January 01, 2012 09:00:00
 	var endTime = new Date( time_remaining );			
